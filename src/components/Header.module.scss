@@ -1,0 +1,33 @@
+@import "./utils/index.scss";
+.head_block {
+  @include theme($theme: $darkBlue);
+  transition:
+    background-color 0.8s,
+    color 0.8s;
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+h3 {
+  font-weight: normal;
+  cursor: pointer;
+}
+img {
+  padding-top: 1px;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+  filter: invert(100%) brightness(1000%);
+  rotate: -15deg;
+}
+.light {
+  background-color: $white;
+  color: $veryDarkBlue;
+  img {
+    filter: none;
+  }
+}
