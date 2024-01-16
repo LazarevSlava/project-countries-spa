@@ -1,7 +1,7 @@
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -21,14 +21,14 @@ footer,
 header,
 nav,
 section {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font-family: $mainFont;
-    vertical-align: baseline;
-    text-rendering: optimizeLegibility;
-    text-size-adjust: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: $mainFont;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: none;
 }
 
 footer,
@@ -36,18 +36,18 @@ header,
 nav,
 section,
 main {
-    display: block;
+  display: block;
 }
 
 body {
-    line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 input {
-    border-radius: 0;
+  border-radius: 0;
 }
