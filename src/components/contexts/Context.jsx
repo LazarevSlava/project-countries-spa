@@ -1,26 +1,24 @@
-import { createContext, useState } from 'react';
-import PropTypes from 'prop-types';
+import { createContext, useState } from "react";
+import PropTypes from "prop-types";
 
 export const ThemContext = createContext();
 
 export const Context = (props) => {
-    const [isTheme, setIsTheme] = useState('dark');
+  const [isTheme, setIsTheme] = useState("dark");
 
-    const toggleTheme = () => {
-        setIsTheme(isTheme === 'dark' ? 'light' : 'dark');
-    };
+  const toggleTheme = () => {
+    setIsTheme(isTheme === "dark" ? "light" : "dark");
+  };
 
-    const value = {
-        isTheme,
-        toggleTheme,
-    };
-    return (
-        <ThemContext.Provider value={value}>
-            {props.children}
-        </ThemContext.Provider>
-    );
+  const value = {
+    isTheme,
+    toggleTheme,
+  };
+  return (
+    <ThemContext.Provider value={value}>{props.children}</ThemContext.Provider>
+  );
 };
 
 Context.propTypes = {
-    children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
 };
