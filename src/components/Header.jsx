@@ -1,8 +1,8 @@
 import style from "./Header.module.scss";
-import iconMoonNight from "../assets/images/half-moon-shape-svgrepo-com.svg";
+import IconMoonNight from "../assets/images/half-moon-shape-svgrepo-com.svg?react";
+import IconMoon from "../assets/images/crescent-moon-phase-svgrepo-com.svg?react";
 import { useContext } from "react";
 import { ThemContext } from "./contexts/Context";
-import iconMoon from "../assets/images/crescent-moon-phase-svgrepo-com.svg";
 
 function Header() {
   const { isTheme = "dark", toggleTheme } = useContext(ThemContext);
@@ -12,7 +12,7 @@ function Header() {
         <div className={style.head_block}>
           <h1>Where in the world?</h1>
           <h2 onClick={toggleTheme}>
-            <img src={iconMoonNight} alt="moon" />
+            <IconMoonNight className={style.icon} fill="red" />
             Dark Mode
           </h2>
         </div>
@@ -20,7 +20,7 @@ function Header() {
         <div className={`${style.head_block} ${style.light}`}>
           <h1>Where in the world?</h1>
           <h2 onClick={toggleTheme}>
-            <img src={iconMoon} alt="iconMoon" />
+            <IconMoon className={style.icon} fill="red" />
             Light Mode
           </h2>
         </div>
