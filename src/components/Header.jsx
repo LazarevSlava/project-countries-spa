@@ -6,26 +6,23 @@ import { ThemContext } from "./contexts/Context";
 
 function Header() {
   const { isTheme = "dark", toggleTheme } = useContext(ThemContext);
+  const containerClassnames = `${style.head_block} ${isTheme === "dark" ? ` ${style.light}` : `''`}`;
+  const themeText = isTheme === "dark" ? "Light theme" : "Dark theme";
+  const ThemeIcon =
+    isTheme === "dark" ? (
+      <IconMoonNight className={style.icon} />
+    ) : (
+      <IconMoon className={style.icon} fill="white" />
+    );
+
   return (
-    <>
-      {isTheme === "dark" ? (
-        <div className={style.head_block}>
-          <h1>Where in the world?</h1>
-          <h2 onClick={toggleTheme}>
-            <IconMoonNight className={style.icon} fill="red" />
-            Dark Mode
-          </h2>
-        </div>
-      ) : (
-        <div className={`${style.head_block} ${style.light}`}>
-          <h1>Where in the world?</h1>
-          <h2 onClick={toggleTheme}>
-            <IconMoon className={style.icon} fill="red" />
-            Light Mode
-          </h2>
-        </div>
-      )}
-    </>
+    <div className={containerClassnames}>
+      <h1>Where in the world?</h1>
+      <h2 onClick={toggleTheme}>
+        {ThemeIcon}
+        {themeText}
+      </h2>
+    </div>
   );
 }
 export { Header };
