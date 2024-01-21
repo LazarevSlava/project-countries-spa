@@ -1,7 +1,16 @@
-import "./App.css";
+import './App.css';
+import { Search } from './components/Search';
 
 function App() {
-  return <></>;
+    const handleSearch = (str) => {
+        console.log(str);
+    };
+
+    return (
+        <>
+            <Search onSearch={handleSearch} />
+        </>
+    );
 }
 
 export default App;
