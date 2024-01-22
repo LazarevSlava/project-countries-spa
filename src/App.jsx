@@ -1,13 +1,13 @@
-import { Header } from "./components/Header";
-import "./App.css";
-import { Context } from "./components/contexts/Context";
+import { Header } from './components/Header';
+import './App.css';
+import { ToggleThemeContext } from './helpers/ToggleThemeContext';
 
 function App() {
-  return (
-    <Context>
-      <Header />
-    </Context>
-  );
+    return (
+        <ToggleThemeContext>
+            <Header />
+        </ToggleThemeContext>
+    );
 }
 
 export default App;
