@@ -1,32 +1,32 @@
-@import './utils/index.scss';
+@import "./utils/index.scss";
 .header {
-    @include theme($theme: $darkBlue);
-    transition:
-        background-color,
-        color 0.8s;
-    width: 100%;
-    min-height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
+  @include theme($theme: $darkBlue);
+  transition:
+    background-color,
+    color 0.8s;
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
 }
 .header p {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-weight: normal;
-    cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: normal;
+  cursor: pointer;
 }
 .icon {
-    padding-top: 2px;
-    width: 1rem;
-    height: 1rem;
-    margin-right: 0.4rem;
-    rotate: 15deg;
+  padding-top: 2px;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.4rem;
+  rotate: 15deg;
 }
 .light {
-    background-color: $white;
-    color: $veryDarkBlue;
+  background-color: $white;
+  color: $veryDarkBlue;
 }
