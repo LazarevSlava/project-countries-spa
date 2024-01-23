@@ -1,0 +1,23 @@
+@import './utils/index.scss';
+
+.dropdown {
+    width: 60%;
+    // user-select: none;
+    margin: 100px;
+    position: relative;
+}
+
+.dropdown .dropdown_btn {
+    // @include theme($theme: $darkBlue);
+    box-shadow: 4px 4px 14px 4px rgba(34, 60, 80, 0.2);
+    border-radius: 10px;
+    padding: 15px 20px;
+    background: $white;
+    background-image: url(../assets/images/arrow-down-svgrepo-com.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.dropdown .dropdown_content {
+}
