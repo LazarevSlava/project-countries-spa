@@ -1,4 +1,6 @@
+import { Header } from "./components/Header";
 import "./App.css";
+import { ToggleThemeContext } from "./helpers/ToggleThemeContext";
 import { Search } from "./components/Search";
 
 function App() {
@@ -8,8 +10,13 @@ function App() {
 
   return (
     <>
-      <Search onSearch={handleSearch} />
+       <ToggleThemeContext>
+      <Header />
+       <Search onSearch={handleSearch} />
+    </ToggleThemeContext>
+   
     </>
+
   );
 }
 
