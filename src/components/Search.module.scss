@@ -1,21 +1,28 @@
+@import './utils/index.scss';
+
 .input_field {
-  margin-top: 10px;
-  width: 80%;
+    margin-top: 10px;
+    width: 80%;
 }
 
-#search {
-  background-image: url(../assets//images/clipart2795130.png);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: 20px;
-  text-indent: 80px;
-  border: none;
-  border-radius: 10px;
-  width: 100%;
-  height: 50px;
-  box-shadow: 4px 4px 14px 4px rgba(34, 60, 80, 0.2);
+.search {
+    @include theme($theme: $darkBlue);
+    background-image: url(../assets//images/clipart2795130.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 20px;
+    text-indent: 80px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    box-shadow: 4px 4px 14px 4px rgba(34, 60, 80, 0.2);
 
-  &:focus-visible {
-    outline: 1px solid black;
-  }
+    &:focus-visible {
+        outline: 1px solid black;
+    }
+}
+.light {
+    background-color: $white;
+    color: $veryDarkBlue;
 }
