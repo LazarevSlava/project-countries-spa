@@ -2,6 +2,7 @@ import { useState } from "react";
 import style from "../components/Search.module.scss";
 import { useDebounce } from "../hooks/useDebounce";
 import PropTypes from "prop-types";
+
 function Search({ onSearch = Function.prototype }) {
   const [value, setValue] = useState("");
 
