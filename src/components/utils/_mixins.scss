@@ -1,8 +1,8 @@
 @mixin theme($theme: $veryDarkBlue) {
-    background-color: $theme;
-    box-shadow: 0 0 1px rgba($theme, 0.25);
-    color: $white;
-    transition:
-        background-color 2s,
-        color 2s;
+  background-color: $theme;
+  box-shadow: 0 0 1px rgba($theme, 0.25);
+  color: $white;
+  transition:
+    background-color 2s,
+    color 2s;
 }
