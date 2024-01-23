@@ -10,14 +10,11 @@ function App() {
 
   return (
     <>
-       <ToggleThemeContext>
-      <Header />
-       <Search onSearch={handleSearch} />
-    </ToggleThemeContext>
-   
+      <ToggleThemeContext>
+        <Header />
+        <Search onSearch={handleSearch} />
+      </ToggleThemeContext>
     </>
-
   );
 }
-
 export default App;
