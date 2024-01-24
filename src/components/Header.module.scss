@@ -1,9 +1,6 @@
 @import "./utils/index.scss";
 .header {
   @include theme($theme: $darkBlue);
-  transition:
-    background-color,
-    color 0.8s;
   width: 100%;
   min-height: 100px;
   display: flex;
