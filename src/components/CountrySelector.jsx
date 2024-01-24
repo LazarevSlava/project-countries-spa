@@ -8,13 +8,14 @@ function CountrySelector({ onSelect = Function.prototype }) {
   const [selected, setSelected] = useState("Filter by Region");
   const options = ["Africa", "America", "Asia", "Europe", "Oceania"];
   const { theme = "dark" } = useTheme();
-  const selectClass = ` ${theme === "dark" ? ` ${style.light}` : `''`}`;
+  const lightThemeClass = theme === "dark" ? style.light : "";
+  const selectClass = ` ${lightThemeClass}`;
 
   return (
     <div className={style.dropdown}>
       <button
         className={`${selectClass} ${style.dropdown_btn}`}
-        onClick={(e) => {
+        onClick={() => {
           setIsActive(!isActive);
         }}
       >
