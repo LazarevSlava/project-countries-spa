@@ -1,9 +1,12 @@
+@import "./utils/index.scss";
+
 .input_field {
   margin-top: 10px;
   width: 80%;
 }
 
-#search {
+.search {
+  @include theme($theme: $darkBlue);
   background-image: url(../assets//images/clipart2795130.png);
   background-size: 20px;
   background-repeat: no-repeat;
@@ -18,4 +21,8 @@
   &:focus-visible {
     outline: 1px solid black;
   }
+}
+.light {
+  background-color: $white;
+  color: $veryDarkBlue;
 }
