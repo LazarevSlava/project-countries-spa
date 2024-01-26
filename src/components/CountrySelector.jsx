@@ -11,36 +11,29 @@ function CountrySelector({ onSelect = Function.prototype }) {
   const { theme = "dark" } = useTheme();
   const lightThemeClass = theme === "dark" ? style.light : "";
   const selectClass = ` ${lightThemeClass}`;
-  const themeIconArrow =
-    theme === "dark" ? (
-      <IconArrowDown className={style.icon} />
-    ) : (
-      <IconArrowDown className={style.icon} fill="white" />
-    );
-  const themeIconClose =
-    theme === "dark" ? (
-      <IconClose
-        className={style.icon}
-        onClick={() => {
-          setSelected("");
-        }}
-      />
-    ) : (
-      <IconClose
-        className={style.icon}
-        onClick={() => {
-          setSelected("");
-        }}
-        fill="white"
-      />
-    );
+  const themeIconArrow = (
+    <IconArrowDown
+      className={style.icon}
+      fill={theme === "light" ? "white" : "black"}
+    />
+  );
+  const themeIconClose = (
+    <IconClose
+      className={style.icon}
+      onClick={() => {
+        setSelected("");
+        setIsActive(false);
+      }}
+      fill={theme === "light" ? "white" : "black"}
+    />
+  );
 
   return (
     <div className={style.dropdown}>
       <button
         className={`${selectClass} ${style.dropdown_btn}`}
         onClick={() => {
-          setIsActive(!isActive);
+          !selected ? setIsActive(!isActive) : "";
         }}
       >
         {!selected ? "Filter by Region" : selected}
