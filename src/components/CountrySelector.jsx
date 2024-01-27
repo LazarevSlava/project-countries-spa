@@ -20,9 +20,9 @@ function CountrySelector({ onSelect = Function.prototype }) {
   const themeIconClose = (
     <IconClose
       className={style.icon}
-      onClick={() => {
+      onClick={(event) => {
+        event.stopPropagation();
         setSelected("");
-        setIsActive(false);
       }}
       fill={theme === "light" ? "white" : "black"}
     />
@@ -33,7 +33,7 @@ function CountrySelector({ onSelect = Function.prototype }) {
       <button
         className={`${selectClass} ${style.dropdown_btn}`}
         onClick={() => {
-          !selected ? setIsActive(!isActive) : "";
+          setIsActive(!isActive);
         }}
       >
         {!selected ? "Filter by Region" : selected}
