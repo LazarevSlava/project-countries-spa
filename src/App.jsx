@@ -1,8 +1,8 @@
-import { Header } from "./components/Header";
-import "./App.css";
-import { ToggleThemeContext } from "./helpers/ToggleThemeContext";
-import { Search } from "./components/Search";
-import { CountrySelector } from "./components/CountrySelector";
+import { Header } from './components/Header';
+import './App.css';
+import { ToggleThemeContext } from './helpers/ToggleThemeContext';
+import { Search } from './components/Search';
+import { CountrySelector } from './components/CountrySelector';
 
 function App() {
   const handleSearch = (str) => {
@@ -23,4 +23,5 @@ function App() {
     </>
   );
 }
+
 export default App;
