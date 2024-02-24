@@ -1,6 +1,6 @@
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -27,7 +27,7 @@ section {
   font-size: 100%;
   font-family: $mainFont;
   vertical-align: baseline;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizelegibility;
   text-size-adjust: none;
 }
 

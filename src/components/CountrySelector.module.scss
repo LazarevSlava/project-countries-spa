@@ -1,4 +1,4 @@
-@import "./utils/index.scss";
+@import './utils/index';
 
 .dropdown {
   width: 60%;
@@ -8,6 +8,7 @@
 
 .dropdown_btn {
   @include theme($theme: $darkBlue);
+
   box-shadow: 4px 4px 14px 4px rgba(34, 60, 80, 0.1);
   position: relative;
   border-radius: 10px;
@@ -23,6 +24,7 @@
 
 .dropdown_content {
   @include theme($theme: $darkBlue);
+
   position: absolute;
   top: 120%;
   left: 0;
@@ -34,6 +36,7 @@
 
 .dropdown_item {
   @include theme($theme: $darkBlue);
+
   box-shadow: none;
   width: 100%;
   text-align: left;
@@ -48,10 +51,12 @@
     color: $veryDarkBlue;
   }
 }
+
 .light {
   background-color: $white;
   color: $veryDarkBlue;
 }
+
 .icon {
   width: 1rem;
   height: 1rem;

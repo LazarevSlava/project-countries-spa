@@ -1,4 +1,4 @@
-@import "./utils/index.scss";
+@import './utils/index';
 
 .input_field {
   margin-top: 10px;
@@ -7,7 +7,8 @@
 
 .search {
   @include theme($theme: $darkBlue);
-  background-image: url(../assets//images/clipart2795130.png);
+
+  background-image: url('../assets/images/clipart2795130.png');
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: 20px;
@@ -22,6 +23,7 @@
     outline: 1px solid black;
   }
 }
+
 .light {
   background-color: $white;
   color: $veryDarkBlue;

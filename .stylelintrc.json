@@ -1,0 +1,17 @@
+{
+  "extends": ["stylelint-config-standard-scss"],
+  "rules": {
+    "alpha-value-notation": null,
+    "color-function-notation": null,
+    "selector-max-id": 0,
+    "selector-class-pattern": null,
+    "scss/dollar-variable-pattern": null
+  },
+  "defaultSeverity": "warning",
+  "overrides": [
+    {
+      "files": ["**/*.scss"],
+      "customSyntax": "postcss-scss"
+    }
+  ]
+}
