@@ -1,56 +1,101 @@
 import style from './Main.module.scss';
 import { useTheme } from '../hooks/themeUtils';
-import { CountryCard } from './CountryCard';
+
 import { Search } from './Search';
 import { CountrySelector } from './CountrySelector';
 import { API_URL } from '../config.js';
 import { useEffect, useState } from 'react';
 import Preloader from './preloader/Preloader';
+import { CountriesList } from './CountriesList';
 
 function Main() {
     const [isLoading, setLoading] = useState(false);
-
+    const [countryName, setCountryName] = useState('');
+    const [regionName, setRegionName] = useState('');
     const [countries, setCountries] = useState([]);
-    const { theme = 'dark', toggleTheme } = useTheme();
+    const [countriesCatalog, setCountriesCatalog] = useState([]);
+    const { theme = 'dark' } = useTheme();
     const containerClassnames = `${style.main} ${theme === 'dark' ? ` ${style.light}` : `''`}`;
 
-    const handleSearch = (str) => {
-        console.log(str);
+    const handleSelect = (region) => {
+        setRegionName(region);
+        if (countryName === '') {
+            console.log('handleSelect');
+            setCountriesCatalog(
+                countries.filter((item) =>
+                    item.region.toLowerCase().includes(region.toLowerCase())
+                )
+            );
+        } else {
+            let countrySelect = [];
+
+            countrySelect = countries.filter((item) =>
+                item.region.toLowerCase().includes(region.toLowerCase())
+            );
+
+            console.log(countrySelect);
+            setCountriesCatalog(
+                countrySelect.filter((item) =>
+                    item.name.common
+                        .toLowerCase()
+                        .includes(countryName.toLowerCase())
+                )
+            );
+        }
+    };
+    console.log(countriesCatalog);
+
+    const handleEmptySelect = () => {
+        handleSearch(countryName);
     };
 
-    const handleSelect = (region) => {
-        console.log(region);
+    const handleSearch = (str) => {
+        setCountryName(str);
+        if (regionName === '') {
+            setCountriesCatalog(
+                countries.filter((item) =>
+                    item.name.common.toLowerCase().includes(str.toLowerCase())
+                )
+            );
+        } else {
+            let regionSelect = [];
+
+            regionSelect = countries.filter((item) =>
+                item.region.toLowerCase().includes(region.toLowerCase())
+            );
+
+            setCountriesCatalog(
+                regionSelect.filter((item) =>
+                    item.name.common.toLowerCase().includes(str.toLowerCase())
+                )
+            );
+        }
     };
 
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const data = await fetch(API_URL);
-                const jsonCountries = await data.json();
-                setCountries(jsonCountries);
-                console.log(jsonCountries);
-            } catch (error) {
-                console.log('error', error);
-            }
-            setLoading(true);
-        };
-
-        fetchData();
+        fetch(API_URL)
+            .then((response) => response.json())
+            .then((data) => {
+                setCountries(data);
+                setCountriesCatalog(data);
+            })
+            .then(setLoading(true))
+            .catch((err) => {
+                console.error(err);
+                setLoading(false);
+            });
     }, []);
 
     return (
         <div className={containerClassnames}>
             <Search onSearch={handleSearch} />
-            <CountrySelector onSelect={handleSelect} />
+            <CountrySelector
+                onSelect={handleSelect}
+                handleEmptySelect={handleEmptySelect}
+            />
             <div className={style.cardContainer}>
                 {isLoading ? (
-                    countries.map((item) => (
-                        <CountryCard
-                            key={item.cca2}
-                            nameCountry={item.name.common}
-                            {...item}
-                        />
-                    ))
+                    <CountriesList countries={countriesCatalog} />
                 ) : (
                     <Preloader />
                 )}
@@ -58,4 +103,5 @@ function Main() {
         </div>
     );
 }
+
 export { Main };
