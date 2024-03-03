@@ -1,16 +1,16 @@
-import { useState } from "react";
-import style from "./CountryCard.module.scss";
-import { useDebounce } from "../hooks/useDebounce";
-import PropTypes from "prop-types";
-import { useTheme } from "../hooks/themeUtils";
+import { useState } from 'react';
+import style from './CountryCard.module.scss';
+import { useDebounce } from '../hooks/useDebounce';
+import PropTypes from 'prop-types';
+import { useTheme } from '../hooks/themeUtils';
 
 function CountryCard(props) {
   const { capital, population, region, nameCountry, flags } = props;
 
-  const formattedWithOptions = population.toLocaleString("en-US");
+  const formattedWithOptions = population.toLocaleString('en-US');
 
-  const { theme = "dark" } = useTheme();
-  const CountryCardStyle = `${style.card} ${theme === "dark" ? ` ${style.light}` : `''`}`;
+  const { theme = 'dark' } = useTheme();
+  const CountryCardStyle = `${style.card} ${theme === 'dark' ? ` ${style.light}` : `''`}`;
 
   return (
     <div className={CountryCardStyle}>

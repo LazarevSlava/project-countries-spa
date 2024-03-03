@@ -1,30 +1,28 @@
-import style from "./Main.module.scss";
-import { useTheme } from "../hooks/themeUtils";
+import style from './Main.module.scss';
+import { useTheme } from '../hooks/themeUtils';
 
-import { Search } from "./Search";
-import { CountrySelector } from "./CountrySelector";
-import { API_URL } from "../config.js";
-import { useEffect, useState } from "react";
-import Preloader from "./preloader/Preloader";
-import { CountriesList } from "./CountriesList";
+import { Search } from './Search';
+import { CountrySelector } from './CountrySelector';
+import { API_URL } from '../config.js';
+import { useEffect, useState } from 'react';
+import Preloader from './preloader/Preloader';
+import { CountriesList } from './CountriesList';
 
 function Main() {
   const [isLoading, setLoading] = useState(false);
-  const [countryName, setCountryName] = useState("");
-  const [regionName, setRegionName] = useState("");
+  const [countryName, setCountryName] = useState('');
+  const [regionName, setRegionName] = useState('');
   const [countries, setCountries] = useState([]);
   const [countriesCatalog, setCountriesCatalog] = useState([]);
-  const { theme = "dark" } = useTheme();
+  const { theme = 'dark' } = useTheme();
 
-  const containerClassnames = `${style.main} ${theme === "dark" ? style.light : ""}`;
+  const containerClassnames = `${style.main} ${theme === 'dark' ? style.light : ''}`;
 
   const handleSelect = (region) => {
     setRegionName(region);
-    if (countryName === "") {
+    if (countryName === '') {
       setCountriesCatalog(
-        countries.filter((item) =>
-          item.region.toLowerCase().includes(region.toLowerCase()),
-        ),
+        countries.filter((item) => item.region.toLowerCase().includes(region.toLowerCase())),
       );
     } else {
       let countrySelect = [];
@@ -52,11 +50,9 @@ function Main() {
 
   const handleSearch = (str) => {
     setCountryName(str);
-    if (regionName === "") {
+    if (regionName === '') {
       setCountriesCatalog(
-        countries.filter((item) =>
-          item.name.common.toLowerCase().includes(str.toLowerCase()),
-        ),
+        countries.filter((item) => item.name.common.toLowerCase().includes(str.toLowerCase())),
       );
     } else {
       let regionSelect = [];
@@ -66,9 +62,7 @@ function Main() {
       );
 
       setCountriesCatalog(
-        regionSelect.filter((item) =>
-          item.name.common.toLowerCase().includes(str.toLowerCase()),
-        ),
+        regionSelect.filter((item) => item.name.common.toLowerCase().includes(str.toLowerCase())),
       );
     }
   };
@@ -90,16 +84,9 @@ function Main() {
   return (
     <div className={containerClassnames}>
       <Search onSearch={handleSearch} />
-      <CountrySelector
-        onSelect={handleSelect}
-        handleEmptySelect={handleEmptySelect}
-      />
+      <CountrySelector onSelect={handleSelect} handleEmptySelect={handleEmptySelect} />
       <div className={style.cardContainer}>
-        {isLoading ? (
-          <CountriesList countries={countriesCatalog} />
-        ) : (
-          <Preloader />
-        )}
+        {isLoading ? <CountriesList countries={countriesCatalog} /> : <Preloader />}
       </div>
     </div>
   );

@@ -1,9 +1,7 @@
-
-import { Header } from "./components/Header";
-import "./App.css";
-import { ToggleThemeContext } from "./helpers/ToggleThemeContext";
-import { Main } from "./components/Main";
-
+import { Header } from './components/Header';
+import './App.css';
+import { ToggleThemeContext } from './helpers/ToggleThemeContext';
+import { Main } from './components/Main';
 
 function App() {
   return (

@@ -1,5 +1,5 @@
-import { CountryCard } from "./CountryCard";
-import style from "./CountriesList.module.scss";
+import { CountryCard } from './CountryCard';
+import style from './CountriesList.module.scss';
 
 function CountriesList({ countries = [] }) {
   return (
@@ -8,11 +8,7 @@ function CountriesList({ countries = [] }) {
         <div className={style.message}>Country is not founded</div>
       ) : (
         countries.map((item) => (
-          <CountryCard
-            key={item.cca2}
-            nameCountry={item.name.common}
-            {...item}
-          />
+          <CountryCard key={item.cca2} nameCountry={item.name.common} {...item} />
         ))
       )}
     </div>

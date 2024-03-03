@@ -1,13 +1,13 @@
-import { useState } from "react";
-import style from "../components/Search.module.scss";
-import { useDebounce } from "../hooks/useDebounce";
-import PropTypes from "prop-types";
-import { useTheme } from "../hooks/themeUtils";
+import { useState } from 'react';
+import style from '../components/Search.module.scss';
+import { useDebounce } from '../hooks/useDebounce';
+import PropTypes from 'prop-types';
+import { useTheme } from '../hooks/themeUtils';
 
 function Search({ onSearch = Function.prototype }) {
-  const [value, setValue] = useState("");
-  const { theme = "dark" } = useTheme();
-  const searchStyle = `${style.search} ${theme === "dark" ? ` ${style.light}` : `''`}`;
+  const [value, setValue] = useState('');
+  const { theme = 'dark' } = useTheme();
+  const searchStyle = `${style.search} ${theme === 'dark' ? ` ${style.light}` : `''`}`;
 
   const handleSearch = useDebounce((value) => {
     onSearch(value);
