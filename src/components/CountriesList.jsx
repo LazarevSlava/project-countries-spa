@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { CountryCard } from './CountryCard';
 import style from './CountriesList.module.scss';
 
@@ -14,5 +15,9 @@ function CountriesList({ countries = [] }) {
     </div>
   );
 }
+
+CountriesList.propTypes = {
+  countries: PropTypes.array.isRequired,
+};
 
 export { CountriesList };

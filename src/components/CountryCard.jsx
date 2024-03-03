@@ -1,7 +1,4 @@
-import { useState } from 'react';
 import style from './CountryCard.module.scss';
-import { useDebounce } from '../hooks/useDebounce';
-import PropTypes from 'prop-types';
 import { useTheme } from '../hooks/themeUtils';
 
 function CountryCard(props) {
@@ -31,9 +28,5 @@ function CountryCard(props) {
     </div>
   );
 }
-
-// CountryCard.propTypes = {
-//     onSearch: PropTypes.func.isRequired,
-// };
 
 export { CountryCard };
