@@ -1,6 +1,8 @@
-@import "./utils/index.scss";
+@import './utils/index';
+
 .header {
   @include theme($theme: $darkBlue);
+
   width: 100%;
   min-height: 100px;
   display: flex;
@@ -9,6 +11,7 @@
   padding: 20px;
   align-items: center;
 }
+
 .header p {
   display: flex;
   flex-direction: row;
@@ -16,6 +19,7 @@
   font-weight: normal;
   cursor: pointer;
 }
+
 .icon {
   padding-top: 2px;
   width: 1rem;
@@ -23,6 +27,7 @@
   margin-right: 0.4rem;
   rotate: 15deg;
 }
+
 .light {
   background-color: $white;
   color: $veryDarkBlue;

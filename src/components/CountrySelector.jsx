@@ -1,3 +1,4 @@
+
 import style from "./CountrySelector.module.scss";
 import { useTheme } from "../hooks/themeUtils";
 import PropTypes from "prop-types";
@@ -15,21 +16,22 @@ function CountrySelector({
   const { theme = "dark" } = useTheme();
   const lightThemeClass = theme === "dark" ? style.light : "";
   const selectClass = ` ${lightThemeClass}`;
+
   const themeIconArrow = (
-    <IconArrowDown
-      className={style.icon}
-      fill={theme === "light" ? "white" : "black"}
-    />
+    <IconArrowDown className={style.icon} fill={theme === 'light' ? 'white' : 'black'} />
   );
+
   const themeIconClose = (
     <IconClose
       className={style.icon}
       onClick={(event) => {
         event.stopPropagation();
+
         setSelected("");
         handleEmptySelect();
+
       }}
-      fill={theme === "light" ? "white" : "black"}
+      fill={theme === 'light' ? 'white' : 'black'}
     />
   );
 
@@ -41,7 +43,7 @@ function CountrySelector({
           setIsActive(!isActive);
         }}
       >
-        {!selected ? "Filter by Region" : selected}
+        {!selected ? 'Filter by Region' : selected}
         {!selected ? themeIconArrow : themeIconClose}
       </button>
       {isActive && (
@@ -50,11 +52,13 @@ function CountrySelector({
             <button
               key={option}
               className={`${selectClass} ${style.dropdown_item}`}
+
               onClick={(e) => {
                 onSelect(e.target.textContent);
 
+
                 setIsActive(false);
-                setSelected(e.target.textContent);
+                setSelected(option);
               }}
             >
               {option}
