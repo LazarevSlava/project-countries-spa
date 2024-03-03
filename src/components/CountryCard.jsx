@@ -29,11 +29,11 @@ function CountryCard(props) {
     </div>
   );
 }
-CountriesList.propTypes = {
-  capital: PropTypes.array.isRequired,
-  population: PropTypes.array.isRequired,
-  region: PropTypes.array.isRequired,
-  nameCountry: PropTypes.array.isRequired,
+CountryCard.propTypes = {
+  capital: PropTypes.oneOfType([PropTypes.string.isRequired, PropTypes.array.isRequired]),
+  population: PropTypes.number.isRequired,
+  region: PropTypes.string.isRequired,
+  nameCountry: PropTypes.string.isRequired,
   flags: PropTypes.shape({
     svg: PropTypes.string.isRequired,
   }).isRequired,

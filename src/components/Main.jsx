@@ -46,7 +46,6 @@ function Main() {
       ),
     );
   };
-  console.log(countriesCatalog);
 
   const handleSearch = (str) => {
     setCountryName(str);
