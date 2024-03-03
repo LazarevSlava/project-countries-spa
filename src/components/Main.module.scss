@@ -1,18 +1,18 @@
-@import './utils/index.scss';
+@import "./utils/index.scss";
 .main {
-    @include theme($theme: $veryDarkBlue);
-    width: 100%;
+  @include theme($theme: $veryDarkBlue);
+  width: 100%;
 
-    display: flex;
-    flex-direction: column;
-    padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
 }
 
 .light {
-    background-color: $veryLightGray;
-    color: $veryDarkBlue;
+  background-color: $veryLightGray;
+  color: $veryDarkBlue;
 }
 .cardContainer {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }

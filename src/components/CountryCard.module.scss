@@ -1,33 +1,33 @@
-@import './utils/index.scss';
+@import "./utils/index.scss";
 .cardImg {
-    width: 100%;
-    height: 50%;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px 10px 0 0;
-    box-shadow: 4px 4px 14px 4px rgba(187, 185, 207, 0.1);
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 4px 4px 14px 4px rgba(187, 185, 207, 0.1);
 }
 .card {
-    @include theme($theme: $darkBlue);
-    min-width: 300px;
-    max-width: 450px;
-    height: 450px;
-    margin: 25px 0;
-    border-radius: 10px;
-    box-shadow: 4px 4px 14px 4px rgba(34, 60, 80, 0.2);
+  @include theme($theme: $darkBlue);
+  min-width: 300px;
+  max-width: 450px;
+  height: 450px;
+  margin: 25px 0;
+  border-radius: 10px;
+  box-shadow: 4px 4px 14px 4px rgba(34, 60, 80, 0.2);
 }
 .h2 {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
 }
 .cardInfo {
-    padding: 30px;
+  padding: 30px;
 }
 .p {
-    font-weight: 600;
-    font-size: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
 }
 .light {
-    background-color: $white;
-    color: $veryDarkBlue;
+  background-color: $white;
+  color: $veryDarkBlue;
 }
