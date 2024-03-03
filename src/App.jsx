@@ -5,12 +5,10 @@ import { Main } from './components/Main';
 
 function App() {
   return (
-    <>
-      <ToggleThemeContext>
-        <Header />
-        <Main />
-      </ToggleThemeContext>
-    </>
+    <ToggleThemeContext>
+      <Header />
+      <Main />
+    </ToggleThemeContext>
   );
 }
 
