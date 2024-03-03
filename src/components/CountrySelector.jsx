@@ -68,6 +68,7 @@ function CountrySelector({
 
 CountrySelector.propTypes = {
   onSelect: PropTypes.func.isRequired,
+  handleEmptySelect: PropTypes.func.isRequired,
 };
 
 export { CountrySelector };
