@@ -1,0 +1,19 @@
+@import './utils/index';
+
+.main {
+  @include theme($theme: $veryDarkBlue);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+}
+
+.light {
+  background-color: $veryLightGray;
+  color: $veryDarkBlue;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+}

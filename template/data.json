@@ -612,11 +612,7 @@
       {
         "acronym": "CARICOM",
         "name": "Caribbean Community",
-        "otherNames": [
-          "Comunidad del Caribe",
-          "Communauté Caribéenne",
-          "Caribische Gemeenschap"
-        ]
+        "otherNames": ["Comunidad del Caribe", "Communauté Caribéenne", "Caribische Gemeenschap"]
       }
     ],
     "cioc": "ANT",
@@ -703,12 +699,7 @@
     "alpha3Code": "ARM",
     "callingCodes": ["374"],
     "capital": "Yerevan",
-    "altSpellings": [
-      "AM",
-      "Hayastan",
-      "Republic of Armenia",
-      "Հայաստանի Հանրապետություն"
-    ],
+    "altSpellings": ["AM", "Hayastan", "Republic of Armenia", "Հայաստանի Հանրապետություն"],
     "subregion": "Western Asia",
     "region": "Asia",
     "population": 2963234,
@@ -1055,11 +1046,7 @@
       {
         "acronym": "CARICOM",
         "name": "Caribbean Community",
-        "otherNames": [
-          "Comunidad del Caribe",
-          "Communauté Caribéenne",
-          "Caribische Gemeenschap"
-        ]
+        "otherNames": ["Comunidad del Caribe", "Communauté Caribéenne", "Caribische Gemeenschap"]
       }
     ],
     "cioc": "BAH",
@@ -1136,11 +1123,7 @@
     "alpha3Code": "BGD",
     "callingCodes": ["880"],
     "capital": "Dhaka",
-    "altSpellings": [
-      "BD",
-      "People's Republic of Bangladesh",
-      "Gônôprôjatôntri Bangladesh"
-    ],
+    "altSpellings": ["BD", "People's Republic of Bangladesh", "Gônôprôjatôntri Bangladesh"],
     "subregion": "Southern Asia",
     "region": "Asia",
     "population": 164689383,
@@ -1248,11 +1231,7 @@
       {
         "acronym": "CARICOM",
         "name": "Caribbean Community",
-        "otherNames": [
-          "Comunidad del Caribe",
-          "Communauté Caribéenne",
-          "Caribische Gemeenschap"
-        ]
+        "otherNames": ["Comunidad del Caribe", "Communauté Caribéenne", "Caribische Gemeenschap"]
       }
     ],
     "cioc": "BAR",
@@ -1484,11 +1463,7 @@
       {
         "acronym": "CARICOM",
         "name": "Caribbean Community",
-        "otherNames": [
-          "Comunidad del Caribe",
-          "Communauté Caribéenne",
-          "Caribische Gemeenschap"
-        ]
+        "otherNames": ["Comunidad del Caribe", "Communauté Caribéenne", "Caribische Gemeenschap"]
       },
       {
         "acronym": "CAIS",
@@ -1575,12 +1550,7 @@
     "alpha3Code": "BMU",
     "callingCodes": ["1"],
     "capital": "Hamilton",
-    "altSpellings": [
-      "BM",
-      "The Islands of Bermuda",
-      "The Bermudas",
-      "Somers Isles"
-    ],
+    "altSpellings": ["BM", "The Islands of Bermuda", "The Bermudas", "Somers Isles"],
     "subregion": "Northern America",
     "region": "Americas",
     "population": 63903,
@@ -2064,19 +2034,7 @@
     "area": 8515767,
     "gini": 53.4,
     "timezones": ["UTC-05:00", "UTC-04:00", "UTC-03:00", "UTC-02:00"],
-    "borders": [
-      "ARG",
-      "BOL",
-      "COL",
-      "FRA",
-      "GUF",
-      "GUY",
-      "PRY",
-      "PER",
-      "SUR",
-      "URY",
-      "VEN"
-    ],
+    "borders": ["ARG", "BOL", "COL", "FRA", "GUF", "GUY", "PRY", "PER", "SUR", "URY", "VEN"],
     "nativeName": "Brasil",
     "numericCode": "076",
     "flags": {
@@ -2302,12 +2260,7 @@
     "alpha3Code": "VIR",
     "callingCodes": ["1 340"],
     "capital": "Charlotte Amalie",
-    "altSpellings": [
-      "VI",
-      "USVI",
-      "American Virgin Islands",
-      "U.S. Virgin Islands"
-    ],
+    "altSpellings": ["VI", "USVI", "American Virgin Islands", "U.S. Virgin Islands"],
     "subregion": "Caribbean",
     "region": "Americas",
     "population": 106290,
@@ -2560,12 +2513,7 @@
     "alpha3Code": "BDI",
     "callingCodes": ["257"],
     "capital": "Gitega",
-    "altSpellings": [
-      "BI",
-      "Republic of Burundi",
-      "Republika y'Uburundi",
-      "République du Burundi"
-    ],
+    "altSpellings": ["BI", "Republic of Burundi", "Republika y'Uburundi", "République du Burundi"],
     "subregion": "Eastern Africa",
     "region": "Africa",
     "population": 11890781,
@@ -2786,14 +2734,7 @@
     "demonym": "Canadian",
     "area": 9984670,
     "gini": 33.3,
-    "timezones": [
-      "UTC-08:00",
-      "UTC-07:00",
-      "UTC-06:00",
-      "UTC-05:00",
-      "UTC-04:00",
-      "UTC-03:30"
-    ],
+    "timezones": ["UTC-08:00", "UTC-07:00", "UTC-06:00", "UTC-05:00", "UTC-04:00", "UTC-03:30"],
     "borders": ["USA"],
     "nativeName": "Canada",
     "numericCode": "124",
@@ -2976,11 +2917,7 @@
     "alpha3Code": "CAF",
     "callingCodes": ["236"],
     "capital": "Bangui",
-    "altSpellings": [
-      "CF",
-      "Central African Republic",
-      "République centrafricaine"
-    ],
+    "altSpellings": ["CF", "Central African Republic", "République centrafricaine"],
     "subregion": "Middle Africa",
     "region": "Africa",
     "population": 4829764,
@@ -3333,11 +3270,7 @@
     "alpha3Code": "CCK",
     "callingCodes": ["61"],
     "capital": "West Island",
-    "altSpellings": [
-      "CC",
-      "Territory of the Cocos (Keeling) Islands",
-      "Keeling Islands"
-    ],
+    "altSpellings": ["CC", "Territory of the Cocos (Keeling) Islands", "Keeling Islands"],
     "subregion": "Australia and New Zealand",
     "region": "Oceania",
     "population": 550,
@@ -3842,12 +3775,7 @@
     "alpha3Code": "HRV",
     "callingCodes": ["385"],
     "capital": "Zagreb",
-    "altSpellings": [
-      "HR",
-      "Hrvatska",
-      "Republic of Croatia",
-      "Republika Hrvatska"
-    ],
+    "altSpellings": ["HR", "Hrvatska", "Republic of Croatia", "Republika Hrvatska"],
     "subregion": "Southern Europe",
     "region": "Europe",
     "population": 4047200,
@@ -4183,12 +4111,7 @@
     "alpha3Code": "DNK",
     "callingCodes": ["45"],
     "capital": "Copenhagen",
-    "altSpellings": [
-      "DK",
-      "Danmark",
-      "Kingdom of Denmark",
-      "Kongeriget Danmark"
-    ],
+    "altSpellings": ["DK", "Danmark", "Kingdom of Denmark", "Kongeriget Danmark"],
     "subregion": "Northern Europe",
     "region": "Europe",
     "population": 5831404,
@@ -4340,12 +4263,7 @@
     "alpha3Code": "DMA",
     "callingCodes": ["1"],
     "capital": "Roseau",
-    "altSpellings": [
-      "DM",
-      "Dominique",
-      "Wai‘tu kubuli",
-      "Commonwealth of Dominica"
-    ],
+    "altSpellings": ["DM", "Dominique", "Wai‘tu kubuli", "Commonwealth of Dominica"],
     "subregion": "Caribbean",
     "region": "Americas",
     "population": 71991,
@@ -4447,11 +4365,7 @@
       {
         "acronym": "CARICOM",
         "name": "Caribbean Community",
-        "otherNames": [
-          "Comunidad del Caribe",
-          "Communauté Caribéenne",
-          "Caribische Gemeenschap"
-        ]
+        "otherNames": ["Comunidad del Caribe", "Communauté Caribéenne", "Caribische Gemeenschap"]
       },
       {
         "acronym": "CAIS",
@@ -4615,11 +4529,7 @@
     "alpha3Code": "SLV",
     "callingCodes": ["503"],
     "capital": "San Salvador",
-    "altSpellings": [
-      "SV",
-      "Republic of El Salvador",
-      "República de El Salvador"
-    ],
+    "altSpellings": ["SV", "Republic of El Salvador", "República de El Salvador"],
     "subregion": "Central America",
     "region": "Americas",
     "population": 6486201,
@@ -5146,13 +5056,7 @@
     "alpha3Code": "FJI",
     "callingCodes": ["679"],
     "capital": "Suva",
-    "altSpellings": [
-      "FJ",
-      "Viti",
-      "Republic of Fiji",
-      "Matanitu ko Viti",
-      "Fijī Gaṇarājya"
-    ],
+    "altSpellings": ["FJ", "Viti", "Republic of Fiji", "Matanitu ko Viti", "Fijī Gaṇarājya"],
     "subregion": "Melanesia",
     "region": "Oceania",
     "population": 896444,
@@ -5440,12 +5344,7 @@
     "alpha3Code": "PYF",
     "callingCodes": ["689"],
     "capital": "Papeetē",
-    "altSpellings": [
-      "PF",
-      "Polynésie française",
-      "French Polynesia",
-      "Pōrīnetia Farāni"
-    ],
+    "altSpellings": ["PF", "Polynésie française", "French Polynesia", "Pōrīnetia Farāni"],
     "subregion": "Polynesia",
     "region": "Oceania",
     "population": 280904,
@@ -5753,11 +5652,7 @@
     "alpha3Code": "DEU",
     "callingCodes": ["49"],
     "capital": "Berlin",
-    "altSpellings": [
-      "DE",
-      "Federal Republic of Germany",
-      "Bundesrepublik Deutschland"
-    ],
+    "altSpellings": ["DE", "Federal Republic of Germany", "Bundesrepublik Deutschland"],
     "subregion": "Central Europe",
     "region": "Europe",
     "population": 83240525,
@@ -5945,12 +5840,7 @@
     "alpha3Code": "GRC",
     "callingCodes": ["30"],
     "capital": "Athens",
-    "altSpellings": [
-      "GR",
-      "Elláda",
-      "Hellenic Republic",
-      "Ελληνική Δημοκρατία"
-    ],
+    "altSpellings": ["GR", "Elláda", "Hellenic Republic", "Ελληνική Δημοκρατία"],
     "subregion": "Southern Europe",
     "region": "Europe",
     "population": 10715549,
@@ -6110,11 +6000,7 @@
       {
         "acronym": "CARICOM",
         "name": "Caribbean Community",
-        "otherNames": [
-          "Comunidad del Caribe",
-          "Communauté Caribéenne",
-          "Caribische Gemeenschap"
-        ]
+        "otherNames": ["Comunidad del Caribe", "Communauté Caribéenne", "Caribische Gemeenschap"]
       }
     ],
     "cioc": "GRN",
@@ -6443,11 +6329,7 @@
     "alpha3Code": "GNB",
     "callingCodes": ["245"],
     "capital": "Bissau",
-    "altSpellings": [
-      "GW",
-      "Republic of Guinea-Bissau",
-      "República da Guiné-Bissau"
-    ],
+    "altSpellings": ["GW", "Republic of Guinea-Bissau", "República da Guiné-Bissau"],
     "subregion": "Western Africa",
     "region": "Africa",
     "population": 1967998,
@@ -6564,11 +6446,7 @@
       {
         "acronym": "CARICOM",
         "name": "Caribbean Community",
-        "otherNames": [
-          "Comunidad del Caribe",
-          "Communauté Caribéenne",
-          "Caribische Gemeenschap"
-        ]
+        "otherNames": ["Comunidad del Caribe", "Communauté Caribéenne", "Caribische Gemeenschap"]
       },
       {
         "acronym": "USAN",
@@ -6592,12 +6470,7 @@
     "alpha3Code": "HTI",
     "callingCodes": ["509"],
     "capital": "Port-au-Prince",
-    "altSpellings": [
-      "HT",
-      "Republic of Haiti",
-      "République d'Haïti",
-      "Repiblik Ayiti"
-    ],
+    "altSpellings": ["HT", "Republic of Haiti", "République d'Haïti", "Repiblik Ayiti"],
     "subregion": "Caribbean",
     "region": "Americas",
     "population": 11402533,
@@ -6652,11 +6525,7 @@
       {
         "acronym": "CARICOM",
         "name": "Caribbean Community",
-        "otherNames": [
-          "Comunidad del Caribe",
-          "Communauté Caribéenne",
-          "Caribische Gemeenschap"
-        ]
+        "otherNames": ["Comunidad del Caribe", "Communauté Caribéenne", "Caribische Gemeenschap"]
       }
     ],
     "cioc": "HAI",
@@ -7236,11 +7105,7 @@
     "alpha3Code": "IRN",
     "callingCodes": ["98"],
     "capital": "Tehran",
-    "altSpellings": [
-      "IR",
-      "Islamic Republic of Iran",
-      "Jomhuri-ye Eslāmi-ye Irān"
-    ],
+    "altSpellings": ["IR", "Islamic Republic of Iran", "Jomhuri-ye Eslāmi-ye Irān"],
     "subregion": "Southern Asia",
     "region": "Asia",
     "population": 83992953,
@@ -7367,12 +7232,7 @@
     "alpha3Code": "IRL",
     "callingCodes": ["353"],
     "capital": "Dublin",
-    "altSpellings": [
-      "IE",
-      "Éire",
-      "Republic of Ireland",
-      "Poblacht na hÉireann"
-    ],
+    "altSpellings": ["IE", "Éire", "Republic of Ireland", "Poblacht na hÉireann"],
     "subregion": "Northern Europe",
     "region": "Europe",
     "population": 4994724,
@@ -7678,11 +7538,7 @@
       {
         "acronym": "CARICOM",
         "name": "Caribbean Community",
-        "otherNames": [
-          "Comunidad del Caribe",
-          "Communauté Caribéenne",
-          "Caribische Gemeenschap"
-        ]
+        "otherNames": ["Comunidad del Caribe", "Communauté Caribéenne", "Caribische Gemeenschap"]
       }
     ],
     "cioc": "JAM",
@@ -7749,12 +7605,7 @@
     "alpha3Code": "JEY",
     "callingCodes": ["44"],
     "capital": "Saint Helier",
-    "altSpellings": [
-      "JE",
-      "Bailiwick of Jersey",
-      "Bailliage de Jersey",
-      "Bailliage dé Jèrri"
-    ],
+    "altSpellings": ["JE", "Bailiwick of Jersey", "Bailliage de Jersey", "Bailliage dé Jèrri"],
     "subregion": "Northern Europe",
     "region": "Europe",
     "population": 100800,
@@ -7817,11 +7668,7 @@
     "alpha3Code": "JOR",
     "callingCodes": ["962"],
     "capital": "Amman",
-    "altSpellings": [
-      "JO",
-      "Hashemite Kingdom of Jordan",
-      "al-Mamlakah al-Urdunīyah al-Hāshimīyah"
-    ],
+    "altSpellings": ["JO", "Hashemite Kingdom of Jordan", "al-Mamlakah al-Urdunīyah al-Hāshimīyah"],
     "subregion": "Western Asia",
     "region": "Asia",
     "population": 10203140,
@@ -8659,11 +8506,7 @@
     "alpha3Code": "LIE",
     "callingCodes": ["423"],
     "capital": "Vaduz",
-    "altSpellings": [
-      "LI",
-      "Principality of Liechtenstein",
-      "Fürstentum Liechtenstein"
-    ],
+    "altSpellings": ["LI", "Principality of Liechtenstein", "Fürstentum Liechtenstein"],
     "subregion": "Central Europe",
     "region": "Europe",
     "population": 38137,
@@ -9399,11 +9242,7 @@
     "alpha3Code": "MHL",
     "callingCodes": ["692"],
     "capital": "Majuro",
-    "altSpellings": [
-      "MH",
-      "Republic of the Marshall Islands",
-      "Aolepān Aorōkin M̧ajeļ"
-    ],
+    "altSpellings": ["MH", "Republic of the Marshall Islands", "Aolepān Aorōkin M̧ajeļ"],
     "subregion": "Micronesia",
     "region": "Oceania",
     "population": 59194,
@@ -9725,12 +9564,7 @@
     "alpha3Code": "MEX",
     "callingCodes": ["52"],
     "capital": "Mexico City",
-    "altSpellings": [
-      "MX",
-      "Mexicanos",
-      "United Mexican States",
-      "Estados Unidos Mexicanos"
-    ],
+    "altSpellings": ["MX", "Mexicanos", "United Mexican States", "Estados Unidos Mexicanos"],
     "subregion": "North America",
     "region": "Americas",
     "population": 128932753,
@@ -10150,11 +9984,7 @@
       {
         "acronym": "CARICOM",
         "name": "Caribbean Community",
-        "otherNames": [
-          "Comunidad del Caribe",
-          "Communauté Caribéenne",
-          "Caribische Gemeenschap"
-        ]
+        "otherNames": ["Comunidad del Caribe", "Communauté Caribéenne", "Caribische Gemeenschap"]
       }
     ],
     "independent": false
@@ -10456,13 +10286,7 @@
     "alpha3Code": "NRU",
     "callingCodes": ["674"],
     "capital": "Yaren",
-    "altSpellings": [
-      "NR",
-      "Naoero",
-      "Pleasant Island",
-      "Republic of Nauru",
-      "Ripublik Naoero"
-    ],
+    "altSpellings": ["NR", "Naoero", "Pleasant Island", "Republic of Nauru", "Ripublik Naoero"],
     "subregion": "Micronesia",
     "region": "Oceania",
     "population": 10834,
@@ -10522,11 +10346,7 @@
     "alpha3Code": "NPL",
     "callingCodes": ["977"],
     "capital": "Kathmandu",
-    "altSpellings": [
-      "NP",
-      "Federal Democratic Republic of Nepal",
-      "Loktāntrik Ganatantra Nepāl"
-    ],
+    "altSpellings": ["NP", "Federal Democratic Republic of Nepal", "Loktāntrik Ganatantra Nepāl"],
     "subregion": "Southern Asia",
     "region": "Asia",
     "population": 29136808,
@@ -10707,13 +10527,7 @@
     "latlng": [-41, 174],
     "demonym": "New Zealander",
     "area": 270467,
-    "timezones": [
-      "UTC-11:00",
-      "UTC-10:00",
-      "UTC+12:00",
-      "UTC+12:45",
-      "UTC+13:00"
-    ],
+    "timezones": ["UTC-11:00", "UTC-10:00", "UTC+12:00", "UTC+12:45", "UTC+13:00"],
     "nativeName": "New Zealand",
     "numericCode": "554",
     "flags": {
@@ -10896,12 +10710,7 @@
     "alpha3Code": "NGA",
     "callingCodes": ["234"],
     "capital": "Abuja",
-    "altSpellings": [
-      "NG",
-      "Nijeriya",
-      "Naíjíríà",
-      "Federal Republic of Nigeria"
-    ],
+    "altSpellings": ["NG", "Nijeriya", "Naíjíríà", "Federal Republic of Nigeria"],
     "subregion": "Western Africa",
     "region": "Africa",
     "population": 206139587,
@@ -11026,11 +10835,7 @@
     "alpha3Code": "NFK",
     "callingCodes": ["672"],
     "capital": "Kingston",
-    "altSpellings": [
-      "NF",
-      "Territory of Norfolk Island",
-      "Teratri of Norf'k Ailen"
-    ],
+    "altSpellings": ["NF", "Territory of Norfolk Island", "Teratri of Norf'k Ailen"],
     "subregion": "Australia and New Zealand",
     "region": "Oceania",
     "population": 2302,
@@ -11675,12 +11480,7 @@
     "alpha3Code": "PRY",
     "callingCodes": ["595"],
     "capital": "Asunción",
-    "altSpellings": [
-      "PY",
-      "Republic of Paraguay",
-      "República del Paraguay",
-      "Tetã Paraguái"
-    ],
+    "altSpellings": ["PY", "Republic of Paraguay", "República del Paraguay", "Tetã Paraguái"],
     "subregion": "South America",
     "region": "Americas",
     "population": 7132530,
@@ -11827,11 +11627,7 @@
     "alpha3Code": "PHL",
     "callingCodes": ["63"],
     "capital": "Manila",
-    "altSpellings": [
-      "PH",
-      "Republic of the Philippines",
-      "Repúblika ng Pilipinas"
-    ],
+    "altSpellings": ["PH", "Republic of the Philippines", "Repúblika ng Pilipinas"],
     "subregion": "South-Eastern Asia",
     "region": "Asia",
     "population": 109581085,
@@ -12009,12 +11805,7 @@
     "alpha3Code": "PRT",
     "callingCodes": ["351"],
     "capital": "Lisbon",
-    "altSpellings": [
-      "PT",
-      "Portuguesa",
-      "Portuguese Republic",
-      "República Portuguesa"
-    ],
+    "altSpellings": ["PT", "Portuguesa", "Portuguese Republic", "República Portuguesa"],
     "subregion": "Southern Europe",
     "region": "Europe",
     "population": 10305564,
@@ -12075,11 +11866,7 @@
     "alpha3Code": "PRI",
     "callingCodes": ["1"],
     "capital": "San Juan",
-    "altSpellings": [
-      "PR",
-      "Commonwealth of Puerto Rico",
-      "Estado Libre Asociado de Puerto Rico"
-    ],
+    "altSpellings": ["PR", "Commonwealth of Puerto Rico", "Estado Libre Asociado de Puerto Rico"],
     "subregion": "Caribbean",
     "region": "Americas",
     "population": 3194034,
@@ -12487,12 +12274,7 @@
     "alpha3Code": "RWA",
     "callingCodes": ["250"],
     "capital": "Kigali",
-    "altSpellings": [
-      "RW",
-      "Republic of Rwanda",
-      "Repubulika y'u Rwanda",
-      "République du Rwanda"
-    ],
+    "altSpellings": ["RW", "Republic of Rwanda", "Repubulika y'u Rwanda", "République du Rwanda"],
     "subregion": "Eastern Africa",
     "region": "Africa",
     "population": 12952209,
@@ -12740,11 +12522,7 @@
       {
         "acronym": "CARICOM",
         "name": "Caribbean Community",
-        "otherNames": [
-          "Comunidad del Caribe",
-          "Communauté Caribéenne",
-          "Caribische Gemeenschap"
-        ]
+        "otherNames": ["Comunidad del Caribe", "Communauté Caribéenne", "Caribische Gemeenschap"]
       }
     ],
     "cioc": "SKN",
@@ -12805,11 +12583,7 @@
       {
         "acronym": "CARICOM",
         "name": "Caribbean Community",
-        "otherNames": [
-          "Comunidad del Caribe",
-          "Communauté Caribéenne",
-          "Caribische Gemeenschap"
-        ]
+        "otherNames": ["Comunidad del Caribe", "Communauté Caribéenne", "Caribische Gemeenschap"]
       }
     ],
     "cioc": "LCA",
@@ -12822,11 +12596,7 @@
     "alpha3Code": "MAF",
     "callingCodes": ["590"],
     "capital": "Marigot",
-    "altSpellings": [
-      "MF",
-      "Collectivity of Saint Martin",
-      "Collectivité de Saint-Martin"
-    ],
+    "altSpellings": ["MF", "Collectivity of Saint Martin", "Collectivité de Saint-Martin"],
     "subregion": "Caribbean",
     "region": "Americas",
     "population": 38659,
@@ -12891,10 +12661,7 @@
     "alpha3Code": "SPM",
     "callingCodes": ["508"],
     "capital": "Saint-Pierre",
-    "altSpellings": [
-      "PM",
-      "Collectivité territoriale de Saint-Pierre-et-Miquelon"
-    ],
+    "altSpellings": ["PM", "Collectivité territoriale de Saint-Pierre-et-Miquelon"],
     "subregion": "Northern America",
     "region": "Americas",
     "population": 6069,
@@ -12993,11 +12760,7 @@
       {
         "acronym": "CARICOM",
         "name": "Caribbean Community",
-        "otherNames": [
-          "Comunidad del Caribe",
-          "Communauté Caribéenne",
-          "Caribische Gemeenschap"
-        ]
+        "otherNames": ["Comunidad del Caribe", "Communauté Caribéenne", "Caribische Gemeenschap"]
       }
     ],
     "cioc": "VIN",
@@ -13010,11 +12773,7 @@
     "alpha3Code": "WSM",
     "callingCodes": ["685"],
     "capital": "Apia",
-    "altSpellings": [
-      "WS",
-      "Independent State of Samoa",
-      "Malo Saʻoloto Tutoʻatasi o Sāmoa"
-    ],
+    "altSpellings": ["WS", "Independent State of Samoa", "Malo Saʻoloto Tutoʻatasi o Sāmoa"],
     "subregion": "Polynesia",
     "region": "Oceania",
     "population": 198410,
@@ -13074,11 +12833,7 @@
     "alpha3Code": "SMR",
     "callingCodes": ["378"],
     "capital": "City of San Marino",
-    "altSpellings": [
-      "SM",
-      "Republic of San Marino",
-      "Repubblica di San Marino"
-    ],
+    "altSpellings": ["SM", "Republic of San Marino", "Repubblica di San Marino"],
     "subregion": "Southern Europe",
     "region": "Europe",
     "population": 33938,
@@ -13203,11 +12958,7 @@
     "alpha3Code": "SAU",
     "callingCodes": ["966"],
     "capital": "Riyadh",
-    "altSpellings": [
-      "SA",
-      "Kingdom of Saudi Arabia",
-      "Al-Mamlakah al-‘Arabiyyah as-Su‘ūdiyyah"
-    ],
+    "altSpellings": ["SA", "Kingdom of Saudi Arabia", "Al-Mamlakah al-‘Arabiyyah as-Su‘ūdiyyah"],
     "subregion": "Western Asia",
     "region": "Asia",
     "population": 34813867,
@@ -13340,13 +13091,7 @@
     "alpha3Code": "SRB",
     "callingCodes": ["381"],
     "capital": "Belgrade",
-    "altSpellings": [
-      "RS",
-      "Srbija",
-      "Republic of Serbia",
-      "Република Србија",
-      "Republika Srbija"
-    ],
+    "altSpellings": ["RS", "Srbija", "Republic of Serbia", "Република Србија", "Republika Srbija"],
     "subregion": "Southern Europe",
     "region": "Europe",
     "population": 6908224,
@@ -13407,12 +13152,7 @@
     "alpha3Code": "SYC",
     "callingCodes": ["248"],
     "capital": "Victoria",
-    "altSpellings": [
-      "SC",
-      "Republic of Seychelles",
-      "Repiblik Sesel",
-      "République des Seychelles"
-    ],
+    "altSpellings": ["SC", "Republic of Seychelles", "Repiblik Sesel", "République des Seychelles"],
     "subregion": "Eastern Africa",
     "region": "Africa",
     "population": 98462,
@@ -14256,11 +13996,7 @@
     "alpha3Code": "LKA",
     "callingCodes": ["94"],
     "capital": "Sri Jayawardenepura Kotte",
-    "altSpellings": [
-      "LK",
-      "ilaṅkai",
-      "Democratic Socialist Republic of Sri Lanka"
-    ],
+    "altSpellings": ["LK", "ilaṅkai", "Democratic Socialist Republic of Sri Lanka"],
     "subregion": "Southern Asia",
     "region": "Asia",
     "population": 21919000,
@@ -14478,13 +14214,7 @@
     "alpha3Code": "SUR",
     "callingCodes": ["597"],
     "capital": "Paramaribo",
-    "altSpellings": [
-      "SR",
-      "Sarnam",
-      "Sranangron",
-      "Republic of Suriname",
-      "Republiek Suriname"
-    ],
+    "altSpellings": ["SR", "Sarnam", "Sranangron", "Republic of Suriname", "Republiek Suriname"],
     "subregion": "South America",
     "region": "Americas",
     "population": 586634,
@@ -14533,11 +14263,7 @@
       {
         "acronym": "CARICOM",
         "name": "Caribbean Community",
-        "otherNames": [
-          "Comunidad del Caribe",
-          "Communauté Caribéenne",
-          "Caribische Gemeenschap"
-        ]
+        "otherNames": ["Comunidad del Caribe", "Communauté Caribéenne", "Caribische Gemeenschap"]
       },
       {
         "acronym": "USAN",
@@ -14754,14 +14480,7 @@
     "alpha3Code": "CHE",
     "callingCodes": ["41"],
     "capital": "Bern",
-    "altSpellings": [
-      "CH",
-      "Swiss Confederation",
-      "Schweiz",
-      "Suisse",
-      "Svizzera",
-      "Svizra"
-    ],
+    "altSpellings": ["CH", "Swiss Confederation", "Schweiz", "Suisse", "Svizzera", "Svizra"],
     "subregion": "Central Europe",
     "region": "Europe",
     "population": 8636896,
@@ -14838,11 +14557,7 @@
     "alpha3Code": "SYR",
     "callingCodes": ["963"],
     "capital": "Damascus",
-    "altSpellings": [
-      "SY",
-      "Syrian Arab Republic",
-      "Al-Jumhūrīyah Al-ʻArabīyah As-Sūrīyah"
-    ],
+    "altSpellings": ["SY", "Syrian Arab Republic", "Al-Jumhūrīyah Al-ʻArabīyah As-Sūrīyah"],
     "subregion": "Western Asia",
     "region": "Asia",
     "population": 17500657,
@@ -14908,13 +14623,7 @@
     "alpha3Code": "TWN",
     "callingCodes": ["886"],
     "capital": "Taipei",
-    "altSpellings": [
-      "TW",
-      "Táiwān",
-      "Republic of China",
-      "中華民國",
-      "Zhōnghuá Mínguó"
-    ],
+    "altSpellings": ["TW", "Táiwān", "Republic of China", "中華民國", "Zhōnghuá Mínguó"],
     "subregion": "Eastern Asia",
     "region": "Asia",
     "population": 23503349,
@@ -15034,11 +14743,7 @@
     "alpha3Code": "TZA",
     "callingCodes": ["255"],
     "capital": "Dodoma",
-    "altSpellings": [
-      "TZ",
-      "United Republic of Tanzania",
-      "Jamhuri ya Muungano wa Tanzania"
-    ],
+    "altSpellings": ["TZ", "United Republic of Tanzania", "Jamhuri ya Muungano wa Tanzania"],
     "subregion": "Eastern Africa",
     "region": "Africa",
     "population": 59734213,
@@ -15241,12 +14946,7 @@
     "alpha3Code": "TGO",
     "callingCodes": ["228"],
     "capital": "Lomé",
-    "altSpellings": [
-      "TG",
-      "Togolese",
-      "Togolese Republic",
-      "République Togolaise"
-    ],
+    "altSpellings": ["TG", "Togolese", "Togolese Republic", "République Togolaise"],
     "subregion": "Western Africa",
     "region": "Africa",
     "population": 8278737,
@@ -15474,11 +15174,7 @@
       {
         "acronym": "CARICOM",
         "name": "Caribbean Community",
-        "otherNames": [
-          "Comunidad del Caribe",
-          "Communauté Caribéenne",
-          "Caribische Gemeenschap"
-        ]
+        "otherNames": ["Comunidad del Caribe", "Communauté Caribéenne", "Caribische Gemeenschap"]
       }
     ],
     "cioc": "TTO",
@@ -15491,11 +15187,7 @@
     "alpha3Code": "TUN",
     "callingCodes": ["216"],
     "capital": "Tunis",
-    "altSpellings": [
-      "TN",
-      "Republic of Tunisia",
-      "al-Jumhūriyyah at-Tūnisiyyah"
-    ],
+    "altSpellings": ["TN", "Republic of Tunisia", "al-Jumhūriyyah at-Tūnisiyyah"],
     "subregion": "Northern Africa",
     "region": "Africa",
     "population": 11818618,
@@ -15572,12 +15264,7 @@
     "alpha3Code": "TUR",
     "callingCodes": ["90"],
     "capital": "Ankara",
-    "altSpellings": [
-      "TR",
-      "Turkiye",
-      "Republic of Turkey",
-      "Türkiye Cumhuriyeti"
-    ],
+    "altSpellings": ["TR", "Turkiye", "Republic of Turkey", "Türkiye Cumhuriyeti"],
     "subregion": "Western Asia",
     "region": "Asia",
     "population": 84339067,
@@ -16141,11 +15828,7 @@
     "alpha3Code": "URY",
     "callingCodes": ["598"],
     "capital": "Montevideo",
-    "altSpellings": [
-      "UY",
-      "Oriental Republic of Uruguay",
-      "República Oriental del Uruguay"
-    ],
+    "altSpellings": ["UY", "Oriental Republic of Uruguay", "República Oriental del Uruguay"],
     "subregion": "South America",
     "region": "Americas",
     "population": 3473727,
@@ -16422,11 +16105,7 @@
     "alpha3Code": "VNM",
     "callingCodes": ["84"],
     "capital": "Hanoi",
-    "altSpellings": [
-      "VN",
-      "Socialist Republic of Vietnam",
-      "Cộng hòa Xã hội chủ nghĩa Việt Nam"
-    ],
+    "altSpellings": ["VN", "Socialist Republic of Vietnam", "Cộng hòa Xã hội chủ nghĩa Việt Nam"],
     "subregion": "South-Eastern Asia",
     "region": "Asia",
     "population": 97338583,
