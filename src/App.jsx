@@ -1,7 +1,7 @@
 import { Layout } from './components/Layout';
 import './App.css';
 import { ToggleThemeContext } from './helpers/ToggleThemeContext';
-import { Main } from './components/Main';
+import { Home } from './pages/Home';
 import { Routes, Route } from 'react-router-dom';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { Country } from './pages/Country';
@@ -11,7 +11,7 @@ function App() {
     <ToggleThemeContext>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index path="/" element={<Main />}></Route>
+          <Route index path="/" element={<Home />}></Route>
           <Route path="/:id" element={<Country />}></Route>
           <Route path="*" element={<NotFoundPage />}></Route>
         </Route>

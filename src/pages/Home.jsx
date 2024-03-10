@@ -1,20 +1,20 @@
-import style from './Main.module.scss';
+import style from './Home.module.scss';
 import { useTheme } from '../hooks/themeUtils';
-import { Search } from './Search';
-import { CountrySelector } from './CountrySelector';
+import { Search } from '../components/Search';
+import { CountrySelector } from '../components/CountrySelector';
 import { API_URL } from '../config.js';
 import { useEffect, useState, useMemo } from 'react';
-import Preloader from './preloader/Preloader';
-import { CountriesList } from './CountriesList';
+import Preloader from '../components/preloader/Preloader';
+import { CountriesList } from '../components/CountriesList';
 
-function Main() {
+function Home() {
   const [isLoading, setLoading] = useState(false);
   const [countries, setCountries] = useState([]);
   const [searchInput, setSearchInput] = useState('');
   const [selectedRegion, setSelectedRegion] = useState('');
   const { theme = 'dark' } = useTheme();
 
-  const containerClassnames = `${style.main} ${theme === 'dark' ? style.light : ''}`;
+  const containerClassnames = `${style.Home} ${theme === 'dark' ? style.light : ''}`;
 
   const handleSelect = (region) => {
     setSelectedRegion(region);
@@ -74,4 +74,4 @@ function Main() {
   );
 }
 
-export { Main };
+export { Home };

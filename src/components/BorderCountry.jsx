@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { useTheme } from '../hooks/themeUtils';
 import style from './BorderCountry.module.scss';

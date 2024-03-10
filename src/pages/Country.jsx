@@ -84,7 +84,7 @@ function Country() {
           </div>
           <div className={CountryStyleCardInfo}>
             <p className={style.p}>
-              <b>Top Level Domain: </b>
+              <b>Top Level DoHome: </b>
               {country.tld[0]}
             </p>
             <p className={style.p}>

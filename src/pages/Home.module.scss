@@ -1,7 +1,8 @@
-@import './utils/index';
+@import '../components/utils/index';
 
-.main {
+.Home {
   @include theme($theme: $veryDarkBlue);
+
   width: 100%;
   display: flex;
   flex-direction: column;
