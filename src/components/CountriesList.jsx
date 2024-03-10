@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { CountryCard } from './CountryCard';
 import style from './CountriesList.module.scss';
+import { Link } from 'react-router-dom';
 
 function CountriesList({ countries = [] }) {
   return (
@@ -9,12 +10,14 @@ function CountriesList({ countries = [] }) {
         <div className={style.message}>Country is not founded</div>
       ) : (
         countries.map((item) => (
-          <CountryCard
-            key={item.cca2}
-            nameCountry={item.name.common}
-            capital={item.capital || 'Unknown'}
-            {...item}
-          />
+          <Link className={style.link} to={`${item.cca2}`} key={item.cca2}>
+            <CountryCard
+              key={item.cca2}
+              nameCountry={item.name.common}
+              capital={item.capital || 'Unknown'}
+              {...item}
+            />
+          </Link>
         ))
       )}
     </div>
