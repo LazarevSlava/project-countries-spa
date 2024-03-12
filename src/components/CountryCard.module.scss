@@ -11,6 +11,7 @@
 
 .card {
   @include theme($theme: $darkBlue);
+
   min-width: 300px;
   max-width: 450px;
   height: 450px;

@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import style from './CountryCard.module.scss';
 import { useTheme } from '../hooks/themeUtils';
 
@@ -29,14 +28,5 @@ function CountryCard(props) {
     </div>
   );
 }
-CountryCard.propTypes = {
-  capital: PropTypes.oneOfType([PropTypes.string.isRequired, PropTypes.array.isRequired]),
-  population: PropTypes.number.isRequired,
-  region: PropTypes.string.isRequired,
-  nameCountry: PropTypes.string.isRequired,
-  flags: PropTypes.shape({
-    svg: PropTypes.string.isRequired,
-  }).isRequired,
-};
 
 export { CountryCard };

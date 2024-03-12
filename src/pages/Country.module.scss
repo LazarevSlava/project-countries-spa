@@ -1,0 +1,54 @@
+@import '.././components/utils/index';
+
+.cardImg {
+  width: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  box-shadow: 4px 4px 14px 4px rgba(187, 185, 207, 0.1);
+}
+
+.card {
+  @include theme($theme: $veryDarkBlue);
+
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.h3 {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  @include theme($theme: $darkBlue);
+
+  box-shadow: 4px 4px 14px 4px rgba(34, 60, 80, 0.2);
+  margin-bottom: 30px;
+  border: none;
+  width: 130px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.buttonBlock {
+  @include theme($theme: $veryDarkBlue);
+
+  display: flex;
+  box-shadow: none;
+}
+
+.link {
+  all: unset;
+}
+
+.light {
+  background-color: $white;
+  color: $veryDarkBlue;
+}
