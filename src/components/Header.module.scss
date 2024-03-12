@@ -32,6 +32,10 @@
   cursor: pointer;
 }
 
+.link {
+  all: unset;
+}
+
 .light {
   background-color: $white;
   color: $veryDarkBlue;

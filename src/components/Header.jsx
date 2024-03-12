@@ -2,7 +2,7 @@ import style from './Header.module.scss';
 import IconMoonNight from '../assets/images/half-moon-shape-svgrepo-com.svg?react';
 import IconMoon from '../assets/images/crescent-moon-phase-svgrepo-com.svg?react';
 import { useTheme } from '../hooks/themeUtils';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Header() {
   const navigate = useNavigate();
@@ -21,9 +21,11 @@ function Header() {
 
   return (
     <div className={containerClassnames}>
-      <h1 className={style.h1} onClick={handleClick}>
-        Where in the world?
-      </h1>
+      <Link className={style.link} to={`/`}>
+        <h1 className={style.h1} onClick={handleClick}>
+          Where in the world?
+        </h1>
+      </Link>
       <p onClick={toggleTheme}>
         {ThemeIcon}
         {themeText}

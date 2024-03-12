@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useTheme } from '../hooks/themeUtils';
 import style from './BorderCountry.module.scss';
-import { API_URL2 } from '../config';
+import { API_URL_ID } from '../config';
 
 function BorderCountry({ countryCode }) {
   const { theme = 'dark' } = useTheme();
@@ -9,7 +9,7 @@ function BorderCountry({ countryCode }) {
   const [country, setCountry] = useState(null);
 
   useEffect(() => {
-    fetch(API_URL2 + countryCode)
+    fetch(API_URL_ID + countryCode)
       .then((response) => response.json())
       .then((data) => {
         setCountry(data[0]);
@@ -19,11 +19,7 @@ function BorderCountry({ countryCode }) {
       });
   }, [countryCode]);
 
-  return (
-    <>
-      <button className={CountryStyleBtn}>{country ? country.name.common : ''}</button>
-    </>
-  );
+  return <button className={CountryStyleBtn}>{country ? country.name.common : ''}</button>;
 }
 
 export { BorderCountry };
