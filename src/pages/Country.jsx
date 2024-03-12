@@ -12,7 +12,7 @@ function Country() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [country, setCountry] = useState(null);
-  const [isLoading, setLoading] = useState(false);
+  const [isLoading, setLoading] = useState(true);
   const { theme = 'dark' } = useTheme();
   const themeIconArrow = <IconArrowLeft stroke={theme === 'light' ? 'white' : 'black'} />;
   const CountryStyle = `${style.card} ${theme === 'dark' ? ` ${style.light}` : ''}`;
@@ -26,7 +26,7 @@ function Country() {
       .then((response) => response.json())
       .then((data) => {
         setCountry(data[0]);
-        setLoading(true);
+        setLoading(false);
       })
       .catch((err) => {
         console.error(err);
@@ -39,28 +39,26 @@ function Country() {
         {themeIconArrow}Back
       </button>
       {isLoading ? (
-        country ? (
-          <>
-            <img className={style.cardImg} src={country.flags.svg} />
-            <CountryInfo key={country.cca2} {...country} />
-            <h3 className={style.h3}>
-              <b>Border Countries: </b>
-            </h3>
-            <div className={CountryStyleBtnBlock}>
-              {country.borders
-                ? Object.values(country.borders).map((border) => (
-                    <Link className={style.link} to={`/${border}`} key={border}>
-                      <BorderCountry key={border} countryCode={border} />
-                    </Link>
-                  ))
-                : `Don't exist`}
-            </div>
-          </>
-        ) : (
-          <div>Error loading country data</div>
-        )
-      ) : (
         <Preloader />
+      ) : country ? (
+        <>
+          <img className={style.cardImg} src={country.flags.svg} />
+          <CountryInfo key={country.cca2} {...country} />
+          <h3 className={style.h3}>
+            <b>Border Countries: </b>
+          </h3>
+          <div className={CountryStyleBtnBlock}>
+            {country.borders
+              ? Object.values(country.borders).map((border) => (
+                  <Link className={style.link} to={`/${border}`} key={border}>
+                    <BorderCountry key={border} countryCode={border} />
+                  </Link>
+                ))
+              : `Don't exist`}
+          </div>
+        </>
+      ) : (
+        <div>Error loading country data</div>
       )}
     </div>
   );
