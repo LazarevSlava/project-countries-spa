@@ -34,6 +34,28 @@
   font-size: 1rem;
 }
 
+@media ($tablet) {
+  .h2 {
+    font-size: 1rem;
+    margin-bottom: 1px;
+  }
+
+  .p {
+    font-size: 0.7rem;
+  }
+
+  .card {
+    min-width: 180px;
+    width: 180px;
+    height: 220px;
+    margin: 20px 50px 20px 0;
+  }
+
+  .cardImg {
+    height: 40%;
+  }
+}
+
 .light {
   background-color: $white;
   color: $veryDarkBlue;

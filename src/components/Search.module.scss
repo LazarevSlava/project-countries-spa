@@ -25,6 +25,16 @@
   }
 }
 
+@media ($tablet) {
+  .search {
+    width: 330px;
+  }
+
+  .input_field {
+    margin-top: 0;
+  }
+}
+
 .light {
   background-color: $white;
   color: $veryDarkBlue;

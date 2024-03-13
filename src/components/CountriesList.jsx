@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function CountriesList({ countries = [] }) {
   return (
-    <div>
+    <div className={style.list}>
       {countries.length === 0 ? (
         <div className={style.message}>Country is not founded</div>
       ) : (

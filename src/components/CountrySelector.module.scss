@@ -20,6 +20,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  transition: all 0.2s;
 }
 
 .dropdown_content {
@@ -49,6 +50,12 @@
   &:hover {
     background: #f4f4f4;
     color: $veryDarkBlue;
+  }
+}
+
+@media ($tablet) {
+  .dropdown {
+    width: 250px;
   }
 }
 

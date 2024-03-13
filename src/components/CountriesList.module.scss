@@ -9,3 +9,11 @@
 .link {
   all: unset;
 }
+
+@media ($tablet) {
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}

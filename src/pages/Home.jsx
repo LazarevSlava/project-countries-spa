@@ -65,8 +65,10 @@ function Home() {
 
   return (
     <div className={containerClassnames}>
-      <Search onSearch={handleSearch} />
-      <CountrySelector onSelect={handleSelect} handleEmptySelect={handleEmptySelect} />
+      <div className={style.searchSelect}>
+        <Search onSearch={handleSearch} />
+        <CountrySelector onSelect={handleSelect} handleEmptySelect={handleEmptySelect} />
+      </div>
       <div className={style.cardContainer}>
         {isLoading ? <CountriesList countries={filteredCountries} /> : <Preloader />}
       </div>
