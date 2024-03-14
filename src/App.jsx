@@ -11,9 +11,9 @@ function App() {
     <ToggleThemeContext>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index path="/" element={<Home />}></Route>
-          <Route path="/:id" element={<Country />}></Route>
-          <Route path="*" element={<NotFoundPage />}></Route>
+          <Route index path="/" element={<Home />} />
+          <Route path="/:id" element={<Country />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
     </ToggleThemeContext>
