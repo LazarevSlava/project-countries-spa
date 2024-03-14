@@ -61,13 +61,14 @@
   }
 
   .cardBlock {
-    height: calc(100vh - 400px);
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   .card {
+    height: calc(100vh - 100px);
     padding: 70px;
   }
 
