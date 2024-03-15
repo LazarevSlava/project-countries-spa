@@ -11,6 +11,7 @@ function CountryInfo(props) {
     .join(', ');
 
   const languages = Object.values(props.languages).join(', ');
+  const formattedWithOptions = props.population.toLocaleString('en-US');
 
   const nativeName = Object.values(props.name.nativeName)
     .filter((name) => Boolean(name.official))
@@ -18,8 +19,8 @@ function CountryInfo(props) {
     .join(', ');
 
   return (
-    <>
-      <div className={CountryStyleCardInfo}>
+    <div className={CountryStyleCardInfo}>
+      <div className={style.infSection}>
         <h2 className={style.h2}>{props.name.common}</h2>
         <p className={style.p}>
           <b>Native Name: </b>
@@ -27,7 +28,7 @@ function CountryInfo(props) {
         </p>
         <p className={style.p}>
           <b>Population: </b>
-          {props.population}
+          {formattedWithOptions}
         </p>
         <p className={style.p}>
           <b>Region: </b>
@@ -42,7 +43,7 @@ function CountryInfo(props) {
           {props.capital}
         </p>
       </div>
-      <div className={CountryStyleCardInfo}>
+      <div className={style.infSection}>
         <p className={style.p}>
           <b>Top Level DoHome: </b>
           {props.tld[0]}
@@ -57,7 +58,7 @@ function CountryInfo(props) {
           {languages}
         </p>
       </div>
-    </>
+    </div>
   );
 }
 

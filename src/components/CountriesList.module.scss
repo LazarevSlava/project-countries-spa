@@ -9,3 +9,8 @@
 .link {
   all: unset;
 }
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}

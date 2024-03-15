@@ -9,6 +9,14 @@
   padding: 20px 40px;
 }
 
+@media ($tablet) {
+  .searchSelect {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 .light {
   background-color: $veryLightGray;
   color: $veryDarkBlue;

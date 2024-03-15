@@ -38,28 +38,34 @@ function Country() {
       <button className={CountryStyleBtn} onClick={goBack}>
         {themeIconArrow}Back
       </button>
-      {isLoading ? (
-        <Preloader />
-      ) : country ? (
-        <>
-          <img className={style.cardImg} src={country.flags.svg} />
-          <CountryInfo key={country.cca2} {...country} />
-          <h3 className={style.h3}>
-            <b>Border Countries: </b>
-          </h3>
-          <div className={CountryStyleBtnBlock}>
-            {country.borders
-              ? Object.values(country.borders).map((border) => (
-                  <Link className={style.link} to={`/${border}`} key={border}>
-                    <BorderCountry key={border} countryCode={border} />
-                  </Link>
-                ))
-              : `Don't exist`}
-          </div>
-        </>
-      ) : (
-        <div>Error loading country data</div>
-      )}
+      <div className={style.cardBlock}>
+        {isLoading ? (
+          <Preloader />
+        ) : country ? (
+          <>
+            <img className={style.cardImg} src={country.flags.svg} />
+            <div className={style.infoBtnBlock}>
+              <CountryInfo key={country.cca2} {...country} />
+              <div className={style.btnHBlock}>
+                <h3 className={style.h3}>
+                  <b>Border Countries: </b>
+                </h3>
+                <div className={CountryStyleBtnBlock}>
+                  {country.borders
+                    ? Object.values(country.borders).map((border) => (
+                        <Link className={style.link} to={`/${border}`} key={border}>
+                          <BorderCountry key={border} countryCode={border} />
+                        </Link>
+                      ))
+                    : `Don't exist`}
+                </div>
+              </div>
+            </div>
+          </>
+        ) : (
+          <div>Error loading country data</div>
+        )}
+      </div>
     </div>
   );
 }
