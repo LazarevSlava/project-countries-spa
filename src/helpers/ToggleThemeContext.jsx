@@ -1,5 +1,4 @@
 import { createContext, useState } from 'react';
-import PropTypes from 'prop-types';
 
 export const ThemeContext = createContext();
 
@@ -16,7 +15,3 @@ export function ToggleThemeContext(props) {
   };
   return <ThemeContext.Provider value={value}>{props.children}</ThemeContext.Provider>;
 }
-
-ToggleThemeContext.propTypes = {
-  children: PropTypes.node.isRequired,
-};

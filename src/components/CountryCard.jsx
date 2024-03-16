@@ -7,11 +7,11 @@ function CountryCard(props) {
   const formattedWithOptions = population.toLocaleString('en-US');
 
   const { theme = 'dark' } = useTheme();
-  const CountryCardStyle = `${style.card} ${theme === 'dark' ? ` ${style.light}` : `''`}`;
+  const CountryCardStyle = `${style.card} ${theme === 'dark' ? ` ${style.light}` : ''}`;
 
   return (
     <div className={CountryCardStyle}>
-      <img className={style.cardImg} src={flags.svg} />
+      <img className={style.cardImg} src={flags.svg} alt="flag" />
       <div className={style.cardInfo}>
         <h2 className={style.h2}>{nameCountry}</h2>
         <p className={style.p}>
