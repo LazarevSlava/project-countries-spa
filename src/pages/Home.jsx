@@ -53,7 +53,7 @@ function Home() {
   useEffect(() => {
     fetchDate();
     setTimeout(() => setLoading(true), 1000);
-  }, []);
+  }, [fetchDate]);
 
   return (
     <div className={containerClassnames}>
