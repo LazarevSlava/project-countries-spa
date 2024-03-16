@@ -37,6 +37,7 @@
   border-radius: 3px;
   cursor: pointer;
   transition: all 0.2s;
+  margin-bottom: 25px;
 }
 
 .buttonBlock {
@@ -59,11 +60,16 @@
     margin-right: 70px;
   }
 
+  .btn {
+    margin-bottom: 0;
+  }
+
   .cardBlock {
     height: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 30px;
   }
 
   .card {
