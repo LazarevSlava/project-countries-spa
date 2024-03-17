@@ -8,8 +8,8 @@ import { CountriesList } from '../components/CountriesList';
 import { useCountryData } from '../hooks/useCountriesContext';
 
 function Home() {
-  const { countries = [], fetchDate, render } = useCountryData();
-  const [isLoading, setLoading] = useState(false);
+  const { countries = [], fetchDate } = useCountryData();
+  const [isLoading, setLoading] = useState(!countries.length);
   const [searchInput, setSearchInput] = useState('');
   const [selectedRegion, setSelectedRegion] = useState('');
   const { theme = 'dark' } = useTheme();
@@ -51,12 +51,11 @@ function Home() {
   }, [countries, searchInput, selectedRegion]);
 
   useEffect(() => {
-    if (countries.length) setLoading(true);
-    if (render.current === 0) {
-      fetchDate(render);
-      render.current++;
-    }
-  }, [countries]);
+    if (!countries.length)
+      fetchDate().then(() => {
+        setLoading(false);
+      });
+  }, [countries, fetchDate]);
 
   return (
     <div className={containerClassnames}>
@@ -65,7 +64,7 @@ function Home() {
         <CountrySelector onSelect={handleSelect} handleEmptySelect={handleEmptySelect} />
       </div>
       <div className={style.cardContainer}>
-        {isLoading ? <CountriesList countries={filteredCountries} /> : <Preloader />}
+        {isLoading ? <Preloader /> : <CountriesList countries={filteredCountries} />}
       </div>
     </div>
   );
