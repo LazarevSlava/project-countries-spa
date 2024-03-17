@@ -19,46 +19,48 @@ function CountryInfo(props) {
     .join(', ');
 
   return (
-    <div className={CountryStyleCardInfo}>
-      <div className={style.infSection}>
-        <h2 className={style.h2}>{props.name.common}</h2>
-        <p className={style.p}>
-          <b>Native Name: </b>
-          {nativeName}
-        </p>
-        <p className={style.p}>
-          <b>Population: </b>
-          {formattedWithOptions}
-        </p>
-        <p className={style.p}>
-          <b>Region: </b>
-          {props.region}
-        </p>
-        <p className={style.p}>
-          <b>Sub Region: </b>
-          {props.subregion}
-        </p>
-        <p className={style.p}>
-          <b>Capital: </b>
-          {props.capital}
-        </p>
-      </div>
-      <div className={style.infSection}>
-        <p className={style.p}>
-          <b>Top Level DoHome: </b>
-          {props.tld[0]}
-        </p>
-        <p className={style.p}>
-          <b>Currencies: </b>
+    <>
+      <h2 className={style.h2}>{props.name.common}</h2>
+      <div className={CountryStyleCardInfo}>
+        <div className={style.infSection}>
+          <p className={style.p}>
+            <b>Native Name: </b>
+            {nativeName}
+          </p>
+          <p className={style.p}>
+            <b>Population: </b>
+            {formattedWithOptions}
+          </p>
+          <p className={style.p}>
+            <b>Region: </b>
+            {props.region}
+          </p>
+          <p className={style.p}>
+            <b>Sub Region: </b>
+            {props.subregion}
+          </p>
+          <p className={style.p}>
+            <b>Capital: </b>
+            {props.capital}
+          </p>
+        </div>
+        <div className={style.infSection}>
+          <p className={style.p}>
+            <b>Top Level DoHome: </b>
+            {props.tld[0]}
+          </p>
+          <p className={style.p}>
+            <b>Currencies: </b>
 
-          {currencies}
-        </p>
-        <p className={style.p}>
-          <b>Languages: </b>
-          {languages}
-        </p>
+            {currencies}
+          </p>
+          <p className={style.p}>
+            <b>Languages: </b>
+            {languages}
+          </p>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
