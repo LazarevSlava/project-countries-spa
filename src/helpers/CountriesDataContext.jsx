@@ -1,21 +1,23 @@
-import { createContext, useState } from 'react';
+import { createContext, useState, useRef } from 'react';
 import { API_URL } from '../config';
 
 export const CountriesContext = createContext();
 
 export function CountriesDataContext(props) {
   const [countries, setCountries] = useState([]);
+  const render = useRef(0);
 
   const fetchDate = async () => {
-    if (countries.length === 0) {
+    console.log(render);
+    if (render.current < 1) {
       fetch(API_URL)
         .then((response) => response.json())
         .then((data) => {
           setCountries(data);
-          console.log(data);
         })
-        .catch((err) => {
-          console.error(err);
+        .catch(() => {
+          const errorMessage = 'An error occurred while fetching the data. Please try again later.'; // Store error message
+          alert(errorMessage);
         });
     }
   };
@@ -23,6 +25,8 @@ export function CountriesDataContext(props) {
   const value = {
     countries,
     fetchDate,
+    render,
   };
+
   return <CountriesContext.Provider value={value}>{props.children}</CountriesContext.Provider>;
 }

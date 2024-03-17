@@ -8,7 +8,7 @@ import { CountriesList } from '../components/CountriesList';
 import { useCountryData } from '../hooks/useCountriesContext';
 
 function Home() {
-  const { countries = [], fetchDate } = useCountryData();
+  const { countries = [], fetchDate, render } = useCountryData();
   const [isLoading, setLoading] = useState(false);
   const [searchInput, setSearchInput] = useState('');
   const [selectedRegion, setSelectedRegion] = useState('');
@@ -51,9 +51,10 @@ function Home() {
   }, [countries, searchInput, selectedRegion]);
 
   useEffect(() => {
-    fetchDate();
-    setTimeout(() => setLoading(true), 1000);
-  }, [fetchDate]);
+    if (countries.length) setLoading(true);
+    fetchDate(render);
+    render.current++;
+  }, [countries]);
 
   return (
     <div className={containerClassnames}>
