@@ -2,8 +2,9 @@
 
 .cardImg {
   width: 100%;
-  height: 50%;
+  height: 200px;
   object-fit: cover;
+  object-position: center;
   background-repeat: no-repeat;
   border-radius: 10px 10px 0 0;
   box-shadow: 4px 4px 14px 4px rgba(187, 185, 207, 0.1);
@@ -12,10 +13,6 @@
 .card {
   @include theme($theme: $darkBlue);
 
-  min-width: 300px;
-  max-width: 450px;
-  height: 450px;
-  margin: 25px 0;
   border-radius: 10px;
   box-shadow: 4px 4px 14px 4px rgba(34, 60, 80, 0.2);
 }
@@ -44,15 +41,8 @@
     font-size: 0.7rem;
   }
 
-  .card {
-    min-width: 180px;
-    width: 220px;
-    height: 260px;
-    margin: 20px 50px 20px 0;
-  }
-
   .cardImg {
-    height: 40%;
+    height: 150px;
   }
 }
 
