@@ -8,18 +8,15 @@ export function CountriesDataContext(props) {
   const render = useRef(0);
 
   const fetchDate = async () => {
-    console.log(render);
-    if (render.current < 1) {
-      fetch(API_URL)
-        .then((response) => response.json())
-        .then((data) => {
-          setCountries(data);
-        })
-        .catch(() => {
-          const errorMessage = 'An error occurred while fetching the data. Please try again later.'; // Store error message
-          alert(errorMessage);
-        });
-    }
+    fetch(API_URL)
+      .then((response) => response.json())
+      .then((data) => {
+        setCountries(data);
+      })
+      .catch(() => {
+        const errorMessage = 'An error occurred while fetching the data. Please try again later.'; // Store error message
+        alert(errorMessage);
+      });
   };
 
   const value = {

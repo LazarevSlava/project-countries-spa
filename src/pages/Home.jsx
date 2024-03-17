@@ -52,8 +52,10 @@ function Home() {
 
   useEffect(() => {
     if (countries.length) setLoading(true);
-    fetchDate(render);
-    render.current++;
+    if (render.current === 0) {
+      fetchDate(render);
+      render.current++;
+    }
   }, [countries]);
 
   return (
