@@ -2,14 +2,14 @@ import style from './Home.module.scss';
 import { useTheme } from '../hooks/themeUtils';
 import { Search } from '../components/Search';
 import { CountrySelector } from '../components/CountrySelector';
-import { API_URL } from '../config.js';
 import { useEffect, useState, useMemo } from 'react';
 import Preloader from '../components/preloader/Preloader';
 import { CountriesList } from '../components/CountriesList';
+import { useCountryData } from '../hooks/useCountriesContext';
 
 function Home() {
-  const [isLoading, setLoading] = useState(false);
-  const [countries, setCountries] = useState([]);
+  const { countries = [], fetchDate } = useCountryData();
+  const [isLoading, setLoading] = useState(!countries.length);
   const [searchInput, setSearchInput] = useState('');
   const [selectedRegion, setSelectedRegion] = useState('');
   const { theme = 'dark' } = useTheme();
@@ -51,17 +51,11 @@ function Home() {
   }, [countries, searchInput, selectedRegion]);
 
   useEffect(() => {
-    fetch(API_URL)
-      .then((response) => response.json())
-      .then((data) => {
-        setCountries(data);
-      })
-      .then(setLoading(true))
-      .catch((err) => {
-        console.error(err);
+    if (!countries.length)
+      fetchDate().then(() => {
         setLoading(false);
       });
-  }, []);
+  }, [countries, fetchDate]);
 
   return (
     <div className={containerClassnames}>
@@ -70,7 +64,7 @@ function Home() {
         <CountrySelector onSelect={handleSelect} handleEmptySelect={handleEmptySelect} />
       </div>
       <div className={style.cardContainer}>
-        {isLoading ? <CountriesList countries={filteredCountries} /> : <Preloader />}
+        {isLoading ? <Preloader /> : <CountriesList countries={filteredCountries} />}
       </div>
     </div>
   );
